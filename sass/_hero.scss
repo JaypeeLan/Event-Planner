@@ -1,0 +1,52 @@
+#landing-page {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: url("../img/bg-1.jpeg") center no-repeat;
+  background-size: cover;
+  text-align: center;
+  backface-visibility: hidden;
+  animation: change 60s infinite ease-in-out;
+
+  .content {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    a {
+      font-size: 1.5rem;
+      background: $color-grey-light-1;
+
+      padding: 10px 20px;
+      color: $color-secondary;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+}
+
+@keyframes change {
+  0% {
+    background-image: url("../img/bg-2.jpeg");
+  }
+  25% {
+    background-image: url("../img/bg-3.jpeg");
+  }
+
+  50% {
+    background-image: url("../img/bg-8.jpeg");
+  }
+  75% {
+    background-image: url("../img/bg-9.jpeg");
+  }
+  100% {
+    background-image: url("../img/bg-10.jpeg");
+  }
+}

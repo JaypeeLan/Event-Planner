@@ -1,0 +1,28 @@
+header {
+  max-width: 100%;
+  padding: 5px 10px 20px 10px;
+  background-color: #fff;
+}
+header nav {
+  height: 70px;
+  width: 650px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  a {
+    text-transform: uppercase;
+    color: $color-secondary;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: color 0.2s ease-out;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}

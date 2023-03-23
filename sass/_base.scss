@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap");
+// COLOR VARIABLES
+$color-primary: #31302e;
+$color-primary-dark: #151515;
+
+$color-secondary: #6d5d4b;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #f7f3f3;
+
+// FONT VARIABLES
+$font-primary: "Manrope", sans-serif;
+$font-display: "EB Garamond", serif;
+
+// BREAKPOINTS
+// 1200px / 16px
+$bp-xl: 75em;
+// 1000px/16px
+$bp-large: 62.5em;
+// 800px/16px
+$bp-md: 50em;
+// 500px/16px
+$bp-sm: 31.25em;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px (default from browser)
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-xl) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $color-grey-light-2;
+
+  color: $color-primary;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+section {
+  min-height: 100vh;
+}
+
+a {
+  cursor: pointer;
+}
+
+p {
+  font-size: 2rem;
+}
