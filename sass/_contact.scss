@@ -1,0 +1,54 @@
+#contact {
+  text-align: center;
+  padding: 10%;
+}
+
+.contact-details {
+  width: 1000px;
+  max-width: 100%;
+
+  form {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+      font-family: inherit;
+      font-size: 1.75rem;
+      outline: none;
+
+      border: 1px solid $color-secondary;
+    }
+
+    input {
+      height: 40px;
+      padding: 5px;
+      margin-bottom: 10px;
+
+      &::placeholder {
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      margin: 20px 0;
+      padding: 5px;
+
+      &::placeholder {
+        font-weight: 400;
+        font-size: 15px;
+        padding: 5px;
+      }
+    }
+
+    button {
+      // width: 50px;
+      // border: none;
+    }
+  }
+}

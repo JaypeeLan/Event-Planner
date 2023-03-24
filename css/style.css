@@ -63,7 +63,11 @@ img {
 .paragraph-2 {
   font-size: 1.5rem; }
 
-.text- .btn {
+.paragraph-3 {
+  font-weight: 700;
+  font-size: 1.4rem; }
+
+.btn {
   background-color: #31302e;
   color: #fff;
   border: none;
@@ -205,7 +209,7 @@ header nav {
       border-radius: 50%;
       scale: 1; }
   .services-details__img:hover a img:last-child {
-    transition: scale 0.4s ease-out;
+    transition: scale 0.8s ease-out;
     scale: 1.08;
     filter: blur(3px); }
   .services-details__img:hover a img:first-child {
@@ -218,14 +222,18 @@ header nav {
 
 .team-details {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   column-gap: 60px;
   row-gap: 30px; }
+  .team-details div {
+    width: 100%; }
+    .team-details div p {
+      padding-top: 5px; }
   .team-details__img {
     position: relative;
     border-radius: 50%;
-    height: 155px;
-    width: 150px;
+    height: 175px;
+    width: 120px;
     margin: 0 auto;
     overflow: hidden; }
     .team-details__img img {
@@ -233,8 +241,6 @@ header nav {
       height: 100%;
       border-radius: 50%;
       scale: 1; }
-  .team-details div p:first-child {
-    font-weight: bold; }
 
 #testimonials {
   text-align: center;
@@ -255,3 +261,48 @@ header nav {
   gap: 25px;
   padding-top: 10px;
   position: relative; }
+  .slider-wrapper p {
+    font-style: italic !important; }
+
+#controls {
+  margin-top: 3rem; }
+  #controls button {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 20px; }
+
+#contact {
+  text-align: center;
+  padding: 10%; }
+
+.contact-details {
+  width: 1000px;
+  max-width: 100%; }
+  .contact-details form {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column; }
+    .contact-details form input,
+    .contact-details form textarea {
+      font-family: inherit;
+      font-size: 1.75rem;
+      outline: none;
+      border: 1px solid #6d5d4b; }
+    .contact-details form input {
+      height: 40px;
+      padding: 5px;
+      margin-bottom: 10px; }
+      .contact-details form input::placeholder {
+        font-weight: 500;
+        font-size: 15px; }
+    .contact-details form textarea {
+      width: 100%;
+      margin: 20px 0;
+      padding: 5px; }
+      .contact-details form textarea::placeholder {
+        font-weight: 400;
+        font-size: 15px;
+        padding: 5px; }

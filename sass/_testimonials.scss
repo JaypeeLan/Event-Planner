@@ -19,4 +19,18 @@
   gap: 25px;
   padding-top: 10px;
   position: relative;
+
+  p {
+    font-style: italic !important;
+  }
+}
+
+#controls {
+  margin-top: 3rem;
+  button {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 20px;
+  }
 }
