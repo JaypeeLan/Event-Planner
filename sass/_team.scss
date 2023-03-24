@@ -1,0 +1,30 @@
+#team {
+  text-align: center;
+  padding: 15% 10% 10% 10%;
+}
+.team-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  column-gap: 60px;
+  row-gap: 30px;
+
+  &__img {
+    position: relative;
+    border-radius: 50%;
+    height: 155px;
+    width: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      scale: 1;
+    }
+  }
+
+  div p:first-child {
+    font-weight: bold;
+  }
+}

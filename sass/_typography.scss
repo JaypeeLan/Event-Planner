@@ -26,12 +26,20 @@
 
 .heading-3 {
   @extend %heading;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: $color-primary;
   text-transform: uppercase;
 }
 
-.btn {
+.paragraph-1 {
+  font-size: 2rem;
+}
+
+.paragraph-2 {
+  font-size: 1.5rem;
+}
+
+.text- .btn {
   background-color: $color-primary;
   color: #fff;
   border: none;

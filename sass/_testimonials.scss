@@ -1,0 +1,22 @@
+#testimonials {
+  text-align: center;
+  background-color: #fff;
+  padding: 15% 10% 5% 10%;
+}
+
+.testimonials-details {
+  max-width: 100%;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding-top: 10px;
+  position: relative;
+}
