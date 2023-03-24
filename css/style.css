@@ -20,7 +20,8 @@ body {
   background-color: #f7f3f3;
   color: #31302e;
   font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.6;
+  overflow-x: hidden; }
 
 section {
   min-height: 100vh; }
@@ -243,6 +244,7 @@ header nav {
       scale: 1; }
 
 #testimonials {
+  overflow-x: hidden;
   text-align: center;
   background-color: #fff;
   padding: 15% 10% 5% 10%; }
