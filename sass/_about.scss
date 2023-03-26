@@ -6,6 +6,11 @@
   padding: 10%;
   line-height: 3.5rem;
 
+  @media only screen and (max-width: $bp-xl) {
+    padding: 5%;
+    max-width: 100%;
+  }
+
   h2 {
     padding-bottom: 2rem;
   }

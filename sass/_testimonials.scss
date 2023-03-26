@@ -3,6 +3,10 @@
   text-align: center;
   background-color: #fff;
   padding: 15% 10% 5% 10%;
+
+  @media only screen and (max-width: $bp-xsm) {
+    padding: 35% 5% 5% 5%;
+  }
 }
 
 .testimonials-details {
@@ -22,7 +26,12 @@
   position: relative;
 
   p {
+    width: 85%;
+    margin: 0 auto;
     font-style: italic !important;
+    @media only screen and (max-width: $bp-xsm) {
+      width: 60%;
+    }
   }
 }
 
@@ -33,5 +42,9 @@
     outline: none;
     background: transparent;
     width: 20px;
+  }
+
+  @media only screen and (max-width: $bp-xsm) {
+    margin-top: 1.2rem;
   }
 }

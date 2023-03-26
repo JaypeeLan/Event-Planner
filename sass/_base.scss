@@ -5,6 +5,7 @@ $color-primary: #31302e;
 $color-primary-dark: #151515;
 
 $color-secondary: #6d5d4b;
+$color-secondary-2: #b8a388;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #f7f3f3;
@@ -20,8 +21,10 @@ $bp-xl: 75em;
 $bp-large: 62.5em;
 // 800px/16px
 $bp-md: 50em;
-// 500px/16px
-$bp-sm: 31.25em;
+// 560px/16px
+$bp-sm: 35em;
+// 450px/16px
+$bp-xsm: 28.1em;
 
 *,
 *::before,

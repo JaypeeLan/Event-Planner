@@ -6,17 +6,32 @@
     <link rel="shortcut icon" href="./img/main-logo.jpeg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-
 
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script> 
-  <title>Minds & Events</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <title>Minds & Events</title>
   </head>
   <body>
     <header>
-      <nav>
+      <a href="/">
+        <img
+          src="./img/logo.png"
+          height="100"
+          width="100"
+          alt="logo"
+          id="logo"
+        />
+      <nav id="nav">
         <a href="#about-us">About us</a>
         <a href="#services">Services</a>
         <a href="/">
@@ -31,6 +46,10 @@
         <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <div id="mobile-toggle">
+        <img src="./img/hamburger.png" alt="menu" id="mobile-toggle-icon">
+      </div>
     </header>
     <main>
       <div id="landing-page">
@@ -56,19 +75,22 @@
           Nigeria, to bring it to reality, from the best vendors to breathe
           taking designs and to beautiful environments. <br />
         </p>
-          <p data-aos="fade-up" data-aos-delay="900">
-
-            Established in 2017, Minds & Event was created to make fine events to
-            the custom taste of our clients. Our goal is to bring magic to
-            reality, while providing the best services and amazing customer
-            services.
+        <p data-aos="fade-up" data-aos-delay="900">
+          Established in 2017, Minds & Event was created to make fine events to
+          the custom taste of our clients. Our goal is to bring magic to
+          reality, while providing the best services and amazing customer
+          services.
         </p>
       </section>
       <section id="services">
         <h2 class="heading-2 u-margin-bottom-medium">Our Services</h2>
         <div class="services-details">
           <!-- =================================================== -->
-          <div data-aos="zoom-in-right" data-aos="zoom-in-left" data-aos-delay="500">
+          <div
+            data-aos="zoom-in-right"
+            data-aos="zoom-in-left"
+            data-aos-delay="500"
+          >
             <h3 class="heading-3 u-margin-bottom-small">Weddings</h3>
             <div class="services-details__img u-margin-bottom-medium">
               <a href="http://">
@@ -77,11 +99,16 @@
                   alt="live link"
                   srcset=""
                 />
-                <img src="https://images.pexels.com/photos/1801263/pexels-photo-1801263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="wedding" srcset="" />
+                <img
+                  src="https://images.pexels.com/photos/1801263/pexels-photo-1801263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="wedding"
+                  srcset=""
+                />
               </a>
             </div>
             <p class="paragraph-2">
-              Our team of specialized planners are ready to bring your fairy tale to reality. 
+              Our team of specialized planners are ready to bring your fairy
+              tale to reality.
             </p>
           </div>
           <!-- ==================================================== -->
@@ -98,12 +125,12 @@
               </a>
             </div>
             <p class="paragraph-2">
-              The corporate world is full of details and at that, needs strategic events, which
-              is where Minds & Event comes in. 
+              The corporate world is full of details and at that, needs
+              strategic events, which is where Minds & Event comes in.
             </p>
           </div>
           <!-- ==================================================== -->
-          <div  data-aos="zoom-in-left" data-aos-delay="1000">
+          <div data-aos="zoom-in-left" data-aos-delay="1000">
             <h3 class="heading-3 u-margin-bottom-small">social gatherings</h3>
             <div class="services-details__img u-margin-bottom-medium">
               <a href="http://">
@@ -112,137 +139,237 @@
                   alt="live link"
                   srcset=""
                 />
-                <img src="./img/social-img.jpg" alt="wedding" srcset="" />
+            
+                <img src="data:image/jpeg;base64,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" alt="wedding" srcset="" />
               </a>
             </div>
             <p class="paragraph-2">
-              From a beautiful engagement celebration to an epic surprise birthday party or
-              even a dinner night, you think it and we will make it a reality.
+              From a beautiful engagement celebration to an epic surprise
+              birthday party or even a dinner night, you think it and we will
+              make it a reality.
             </p>
           </div>
-      </section>
-      <section id="team">
-        <h2 class="heading-2 u-margin-bottom-big">Meet The Team</h2>
-        <div class="team-details">
-          <div  data-aos="zoom-out" data-aos-delay="500">
-            <div class="team-details__img ">     
-                <img src="./img/wedding-img.jpeg" alt="wedding" srcset="" />      
-            </div>
-            <p class="paragraph-3">
-              Akanbi Dolapo
-            </p>
-            <p class="paragraph-2">
-              Chief Executive Officer
-            </p>
-          </div>    
-          <!-- =============== -->
-          <div  data-aos="zoom-out" data-aos-delay="700">
-            <div class="team-details__img ">     
-                <img src="./img/wedding-img.jpeg" alt="wedding" srcset="" />      
-            </div>
-            <p class="paragraph-3">
-             Sogbesan Oreoluwa
-            </p>
-            <p class="paragraph-2">
-              Chief Operations Officer
-            </p>
-          </div>    
-          <!-- =============== -->
-          <div  data-aos="zoom-out" data-aos-delay="900">
-            <div class="team-details__img ">     
-                <img src="./img/wedding-img.jpeg" alt="wedding" srcset="" />      
-            </div>
-            <p class="paragraph-3">
-              Usman Zaainab
-            </p>
-            <p class="paragraph-2">
-              Operations Director
-            </p>
-          </div>    
-          <!-- =============== -->
-          <div  data-aos="zoom-out" data-aos-delay="1100">
-            <div class="team-details__img ">     
-                <img src="./img/wedding-img.jpeg" alt="wedding" srcset="" />      
-            </div>
-            <p class="paragraph-3">
-              Laniran Joseph
-            </p>
-            <p class="paragraph-2">
-              Content Director
-            </p>
-          </div>    
-          <!-- =============== -->
-        </div>     
-
-      </section>
-      <section id="testimonials">
-        <div class="testimonials-details">
-          <div class="heading-2" >Testimonials</h2>
+          </section>
+          <!-- ================================ -->
+          <section id="other-services" data-aos="fade-zoom-in">
+         <div>
+           <h2 class="heading-2 u-margin-bottom-medium">
+             Other services we offer
+            </h2>
           </div>
+            <div class="other-services-details" >
+              <div data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
 
-          <div class="slider-wrapper">
-            <div class="slider">
-              <div class="slider-slide">
-                  <br>
-               <p>
-               "I had my wedding at the Event Center, and it was beautiful! The coordinator was of great assistance to make my wedding day flow smoothly.”               </p>   
-               <br>
-               <br>
-                <p> - Mr Adeleye</p>
+              data-aos-offset="0">
+                <h3 class="heading-3">Catering Services</h3>
+                <p>
+                  Filling the stomach is as important as coming to an event. You
+                  can select from our variety of meals, from intercontinental to
+                  local dishes
+                </p>
               </div>
-              <div class="slider-slide">
-                <br>
-             <p>
-              “The Event Center was a place I felt comfortable to have my wedding reception because it accommodated the amount of people I wanted to share my special day with, I knew it was a Christian place that had standards, and Nelda Wheat as well as the other staff were awesome & genuinely cared.  Thank you for providing the Event Center to help me celebrate my special day!”             </p>   
-             
-              <p>- Anonymous</p>
-            </div>
-            <div class="slider-slide">
-              <br>
-           <p>
-            “The Event Center was a place I felt comfortable to have my wedding reception because it accommodated the amount of people I wanted to share my special day with, I knew it was a Christian place that had standards, and Nelda Wheat as well as the other staff were awesome & genuinely cared.  Thank you for providing the Event Center to help me celebrate my special day!”           </p>   
-           
-            <p>- Mrs. Olusola</p>
-          </div>
-            </div>
-          </div>
 
-          <div id="controls">
-            <button class="prev"> <i class="fa-solid fa-angle-left"></i> </button>
-            <button class="next"><i class="fa-solid fa-angle-right"></i> </button>
-          </div>
+              <div data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="100"
+              data-aos-offset="0">
+                <h3 class="heading-3">Hostess</h3>
+                <p>
+                  An event is nothing without coordination. With our hostess,
+                  you don’t have to worry about coordination
+                </p>
+              </div>
+              <div data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="200"
+              data-aos-offset="0">
+                <h3 class="heading-3">Event Security</h3>
+                <p>
+                  Nothing gives peace better than knowing you are safe. With our
+                  security, your event is safer than ever
+                </p>
+              </div>
+              <div data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0">
+                <h3 class="heading-3">Decorations</h3>
+                <p>
+                  Beauty they say is in the eyes of the beholder, with our
+                  decoration designs and experts, you definitely will fall in
+                  love with your event
+                </p>
+              </div>
+              <div data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="400"
+              data-aos-offset="0">
+                <h3 class="heading-3">Photography & Videography</h3>
+                <p>
+                  We create memories, not just for that day, but for a lifetime,
+                  with our amazing photbooks, and event films
+                </p>
+              </div>
+            </div>
+          </section>
+          <section id="team">
+            <h2 class="heading-2 u-margin-bottom-big">Meet The Team</h2>
+            <div class="team-details">
+              <div data-aos="zoom-out" data-aos-delay="500">
+                <div class="team-details__img">
+                  <img src="https://www.svgrepo.com/show/18074/avatar.svg" alt="wedding" srcset="" />
+                </div>
+                <p class="paragraph-3">Akanbi Dolapo</p>
+                <p class="paragraph-2">Chief Executive Officer</p>
+              </div>
+              <!-- =============== -->
+              <div data-aos="zoom-out" data-aos-delay="700">
+                <div class="team-details__img">
+                  <img src="https://www.svgrepo.com/show/170303/avatar.svg" alt="wedding" srcset="" />
+                </div>
+                <p class="paragraph-3">Sogbesan Oreoluwa</p>
+                <p class="paragraph-2">Chief Operations Officer</p>
+              </div>
+              <!-- =============== -->
+              <div data-aos="zoom-out" data-aos-delay="900">
+                <div class="team-details__img">
+                  <img src="https://www.svgrepo.com/show/18074/avatar.svg" alt="wedding" srcset="" />
+                </div>
+                <p class="paragraph-3">Usman Zainab</p>
+                <p class="paragraph-2">Operations Director</p>
+              </div>
+              <!-- =============== -->
+              <div data-aos="zoom-out" data-aos-delay="1100">
+                <div class="team-details__img">
+                  <img src="https://www.svgrepo.com/show/170303/avatar.svg" alt="wedding" srcset="" />
+                </div>
+                <p class="paragraph-3">Laniran Joseph</p>
+                <p class="paragraph-2">Content Director</p>
+              </div>
+              <!-- =============== -->
+            </div>
+          </section>
+          <section id="testimonials">
+            <div class="testimonials-details">
+              <h2 class="heading-2">Testimonials</h2>
+            </div>
+
+            <div class="slider-wrapper">
+              <div class="slider">
+                <div class="slider-slide">
+                  <br />
+                  <p>
+                    "I had my wedding at the Event Center, and it was beautiful!
+                    The coordinator was of great assistance to make my wedding
+                    day flow smoothly.”
+                  </p>
+                  <br />
+                  <br />
+                  <p>- Mr Adeleye</p>
+                </div>
+                <div class="slider-slide">
+                  <br />
+                  <p>
+                    “The Event Center was a place I felt comfortable to have my
+                    wedding reception because it accommodated the amount of
+                    people I wanted to share my special day with, I knew it was
+                    a Christian place that had standards, and Nelda Wheat as
+                    well as the other staff were awesome & genuinely cared.
+                    Thank you for providing the Event Center to help me
+                    celebrate my special day!”
+                  </p>
+
+                  <p>- Anonymous</p>
+                </div>
+                <div class="slider-slide">
+                  <br />
+                  <p>
+                    “The Event Center was a place I felt comfortable to have my
+                    wedding reception because it accommodated the amount of
+                    people I wanted to share my special day with, I knew it was
+                    a Christian place that had standards, and Nelda Wheat as
+                    well as the other staff were awesome & genuinely cared.
+                    Thank you for providing the Event Center to help me
+                    celebrate my special day!”
+                  </p>
+
+                  <p>- Mrs. Olusola</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="controls">
+              <button class="prev">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button class="next">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+            <!-- </div> -->
+          </section>
+          <section id="contact">
+            <h2 class="heading-2 u-margin-bottom-big">Contact Us</h2>
+            <div class="contact-details">
+              <form action="https://formbold.com/s/677JR" method="POST">
+                <input type="email" placeholder="Email" name="email" />
+                <input type="text" placeholder="Subject" name="subject" />
+                <textarea
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Type your message"
+                ></textarea>
+
+                <!-- your other form fields go here -->
+                <button class="btn" type="submit">Send Message</button>
+              </form>
+            </div>
+          </section>
+
+          <footer id="footer">
+            <div>
+              <a href="#">Home </a>
+              <a href="#services"> Services </a>
+              <a href="#about"> About </a>
+              <a href="#contact"> Contact </a>
+            </div>
+            <div>
+              <img src="./img/logo.png" alt="logo" />
+            </div>
+
+            <div>
+              <div>
+                <p>Reach us on</p>
+                <a href="tel:+2349027120790"> +2349027120790</a>
+                <a href="tel:+2349022498734">+2349022498734</a>
+              </div>
+
+              <div>
+                <span>&copy; Mind and Events</span>
+                <span>
+                  Site by <a href="http://laniran-porfolio.vercel.app">Jp</a>
+                </span>
+              </div>
+            </div>
+          </footer>
+
+          <!-- AOS JS -->
+
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init({
+              delay: 200,
+              duration: 1500,
+
+              once: false,
+              mirror: true, // whether elements should animate out while scrolling past them
+            });
+          </script>
+          <script src="app.js"></script>
         </div>
-        
-      </section>
-      <section id="contact">
-        <h2 class="heading-2 u-margin-bottom-big">Contact Us</h2>
-          <div class="contact-details">
-            <form action="https://formbold.com/s/677JR" method="POST">
-              <input type="email" placeholder="Email" name="email">
-              <input type="text" placeholder="Subject" name="subject">
-              <textarea name="message" cols="30" rows="10" placeholder="Type your message"></textarea>
-            
-              <!-- your other form fields go here -->
-              <button class="btn" type="submit">Send Message</button>
-            </form>  
-          
-          </div>
       </section>
     </main>
-    <footer></footer>
   </body>
-
-  <!-- AOS JS -->
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      delay: 200, 
-      duration: 1500, 
-
-      once: false, 
-      mirror: true, // whether elements should animate out while scrolling past them
-    });
-  </script>
-  <script src="app.js"></script>
 </html>

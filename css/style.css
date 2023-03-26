@@ -102,9 +102,18 @@ a {
   margin-top: 10rem !important; }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
   max-width: 100%;
   padding: 5px 10px 20px 10px;
   background-color: #fff; }
+  header > a {
+    display: none; }
+    @media only screen and (max-width: 28.1em) {
+      header > a {
+        display: block; } }
 
 header nav {
   height: 70px;
@@ -116,6 +125,19 @@ header nav {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px; }
+  @media only screen and (max-width: 28.1em) {
+    header nav {
+      background-color: #f9f7f6;
+      position: absolute;
+      top: 12rem;
+      transition: all 0.2s ease;
+      left: -100%;
+      z-index: 99;
+      width: 100%;
+      height: 80vh;
+      flex-direction: column;
+      margin-top: 0px;
+      padding: 0 0 8rem 0; } }
   header nav a {
     text-transform: uppercase;
     color: #6d5d4b;
@@ -124,6 +146,13 @@ header nav {
     transition: color 0.2s ease-out; }
     header nav a:hover {
       color: #151515; }
+    @media only screen and (max-width: 28.1em) {
+      header nav a:nth-child(4) {
+        display: none; } }
+
+.showNav {
+  left: 0;
+  transition: all 0.5s ease-in; }
 
 #landing-page {
   position: relative;
@@ -141,7 +170,8 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-bottom: 80px; }
     #landing-page .content a {
       font-size: 1.5rem;
       background: #f9f7f6;
@@ -170,6 +200,10 @@ header nav {
   max-width: 85%;
   padding: 10%;
   line-height: 3.5rem; }
+  @media only screen and (max-width: 75em) {
+    #about-us {
+      padding: 5%;
+      max-width: 100%; } }
   #about-us h2 {
     padding-bottom: 2rem; }
   #about-us h3 {
@@ -238,7 +272,7 @@ header nav {
     margin: 0 auto;
     overflow: hidden; }
     .team-details__img img {
-      width: 100%;
+      width: 170px;
       height: 100%;
       border-radius: 50%;
       scale: 1; }
@@ -248,6 +282,9 @@ header nav {
   text-align: center;
   background-color: #fff;
   padding: 15% 10% 5% 10%; }
+  @media only screen and (max-width: 28.1em) {
+    #testimonials {
+      padding: 35% 5% 5% 5%; } }
 
 .testimonials-details {
   max-width: 100%;
@@ -264,7 +301,12 @@ header nav {
   padding-top: 10px;
   position: relative; }
   .slider-wrapper p {
+    width: 85%;
+    margin: 0 auto;
     font-style: italic !important; }
+    @media only screen and (max-width: 28.1em) {
+      .slider-wrapper p {
+        width: 60%; } }
 
 #controls {
   margin-top: 3rem; }
@@ -273,6 +315,9 @@ header nav {
     outline: none;
     background: transparent;
     width: 20px; }
+  @media only screen and (max-width: 28.1em) {
+    #controls {
+      margin-top: 1.2rem; } }
 
 #contact {
   text-align: center;
@@ -280,7 +325,8 @@ header nav {
 
 .contact-details {
   width: 1000px;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0 auto; }
   .contact-details form {
     width: 100%;
     margin: 0 auto;
@@ -308,3 +354,60 @@ header nav {
         font-weight: 400;
         font-size: 15px;
         padding: 5px; }
+
+#footer {
+  background-color: #b8a388;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
+  #footer div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center; }
+    #footer div:first-child a {
+      font-size: 1.6rem;
+      color: #f7f3f3;
+      border-bottom: 1px solid #f7f3f3;
+      transition: all 0.2s ease; }
+      @media only screen and (max-width: 75em) {
+        #footer div:first-child a {
+          margin-bottom: 2rem; } }
+      #footer div:first-child a:hover {
+        color: #31302e;
+        transform: translateY(-2px); }
+      #footer div:first-child a:active {
+        color: #f7f3f3; }
+    @media only screen and (max-width: 75em) {
+      #footer div:first-child {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem; } }
+  #footer div:nth-of-type(2) {
+    text-align: center; }
+  #footer div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    #footer div:last-child a {
+      color: #f7f7f7; }
+    #footer div:last-child span,
+    #footer div:last-child p {
+      font-size: 12px;
+      color: #f9f7f6; }
+    #footer div:last-child div:first-child {
+      display: flex;
+      flex-direction: column; }
+      #footer div:last-child div:first-child > * {
+        margin-bottom: 10px; }
+
+#other-services {
+  padding: 8% 5%;
+  text-align: center;
+  background-color: #e6f9f3; }
+
+.other-services-details {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 80px;
+  row-gap: 40px; }

@@ -1,0 +1,67 @@
+#footer {
+  background-color: $color-secondary-2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+  div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    a {
+      font-size: 1.6rem;
+      color: $color-grey-light-2;
+      border-bottom: 1px solid $color-grey-light-2;
+      transition: all 0.2s ease;
+
+      @media only screen and (max-width: $bp-xl) {
+        margin-bottom: 2rem;
+      }
+
+      &:hover {
+        color: $color-primary;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        color: $color-grey-light-2;
+      }
+    }
+
+    @media only screen and (max-width: $bp-xl) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+    }
+  }
+
+  div:nth-of-type(2) {
+    text-align: center;
+  }
+
+  div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      color: rgb(247, 247, 247);
+    }
+
+    span,
+    p {
+      font-size: 12px;
+      color: $color-grey-light-1;
+    }
+
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+
+      > * {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

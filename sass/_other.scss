@@ -1,0 +1,13 @@
+#other-services {
+  padding: 8% 5%;
+  text-align: center;
+  background-color: rgb(230, 249, 243);
+}
+
+.other-services-details {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 80px;
+  row-gap: 40px;
+}
