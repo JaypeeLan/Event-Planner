@@ -150,6 +150,12 @@ header nav {
       header nav a:nth-child(4) {
         display: none; } }
 
+#mobile-toggle {
+  display: none; }
+  @media only screen and (max-width: 28.1em) {
+    #mobile-toggle {
+      display: block; } }
+
 .showNav {
   left: 0;
   transition: all 0.5s ease-in; }
@@ -411,3 +417,69 @@ header nav {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   column-gap: 80px;
   row-gap: 40px; }
+
+#logo {
+  text-align: center;
+  align-items: center; }
+
+.service {
+  text-align: center; }
+  .service-title {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7ead9; }
+    .service-title__heading {
+      text-transform: capitalize; }
+  .service-details {
+    display: flex;
+    padding: 5rem;
+    width: 100rem;
+    max-width: 100%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 50em) {
+      .service-details {
+        padding: 3rem;
+        flex-direction: column;
+        align-items: center; } }
+    .service-details__text {
+      text-align: left;
+      width: 70rem; }
+      @media only screen and (max-width: 50em) {
+        .service-details__text {
+          width: 90%; } }
+      .service-details__text p {
+        width: 80%; }
+        @media only screen and (max-width: 50em) {
+          .service-details__text p {
+            width: 100%; } }
+    @media only screen and (max-width: 50em) {
+      .service-details__img {
+        margin: 10rem auto; } }
+    .service-details__img img {
+      object-fit: cover;
+      width: 500px;
+      height: 350px; }
+  .service-extra-details {
+    background-color: #f7ead9;
+    display: flex;
+    justify-content: space-around;
+    padding: 10%; }
+    @media only screen and (max-width: 50em) {
+      .service-extra-details {
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (max-width: 50em) {
+      .service-extra-details__img {
+        order: 2;
+        margin: 5rem auto; } }
+    .service-extra-details__img img {
+      object-fit: cover;
+      width: 300px;
+      height: 300px; }
+    .service-extra-details__services {
+      text-align: left; }
+      .service-extra-details__services ul {
+        line-height: 30px; }
